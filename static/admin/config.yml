@@ -27,7 +27,8 @@ collections:
           default: 'event',
         }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Start', name: 'start', widget: 'datetime' }
+      - { label: 'End', name: 'end', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'YT ID', name: 'yt_id', widget: 'string' }
 
