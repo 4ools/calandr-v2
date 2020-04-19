@@ -2,6 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4da9d9ea-dd24-4242-914c-37de47d50e50/deploy-status)](https://app.netlify.com/sites/calndr/deploys)
 
+## Running locally
+
+- uncomment local_backend: true in `static/admin/config.yml`
+- in the app root in another terminal window run: `npx netlify-cms-proxy-server`
+- you will need an invite to the cms to authenticate
+
 **Note:** This APP uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
 This repo contains a workout calendar app built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
