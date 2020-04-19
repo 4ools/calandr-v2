@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "title": "MMA Boxing",
+      "start": 1586512800000,
+      "end": 1586516400000,
+      "allDay": false,
+      "resource": "https://hasfit.com/workouts/mma/mma-workout-routine/"
+    },
+    {
+      "title": "Weights",
+      "start": 1586599200000,
+      "end": 1586601000000,
+      "allDay": false,
+      "resource": "https://hasfit.com/workouts/home/advanced-high-intensity/30-minute-full-body-hiit/"
+    }
+  ]
+}
