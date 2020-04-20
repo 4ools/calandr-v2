@@ -7,7 +7,7 @@ import useEventData from '../EventsData';
 
 const localizer = momentLocalizer(moment);
 
-const CalendarComponent = (props) => {
+const CalendarComponent = ({ selectEvent }) => {
   const events = useEventData();
   return (
     <div className="calendar">
@@ -16,6 +16,7 @@ const CalendarComponent = (props) => {
           month: true,
           agenda: true,
         }}
+        onSelectEvent={selectEvent}
         localizer={localizer}
         events={events}
         startAccessor="start"

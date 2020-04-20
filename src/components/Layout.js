@@ -2,6 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import useSiteMetadata from './SiteMetadata';
 import { withPrefix } from 'gatsby';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
+import Theme from './Theme';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -45,7 +48,12 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <div>{children}</div>
+      <Theme>
+        <main>
+          <CssBaseline />
+          <Container maxWidth="md">{children}</Container>
+        </main>
+      </Theme>
     </div>
   );
 };
