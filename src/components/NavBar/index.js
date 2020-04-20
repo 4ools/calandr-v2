@@ -1,9 +1,10 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 const NavBar = ({ title }) => {
   return (
-    <header>
-      <h1>{title}</h1>
+    <header style={{ textAlign: 'center', marginTop: 20 }}>
+      <Typography variant="h4">{title}</Typography>
     </header>
   );
 };
