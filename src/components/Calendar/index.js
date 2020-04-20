@@ -12,6 +12,10 @@ const CalendarComponent = (props) => {
   return (
     <div className="calendar">
       <Calendar
+        views={{
+          month: true,
+          agenda: true,
+        }}
         localizer={localizer}
         events={events}
         startAccessor="start"

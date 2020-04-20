@@ -2,45 +2,47 @@ backend:
   name: git-gateway
   branch: master
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+local_backend: true
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'events'
-    label: 'Events'
-    folder: 'src/pages/events'
+  - name: "events"
+    label: "Events"
+    folder: "src/pages/events"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'event',
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "event",
         }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Start', name: 'start', widget: 'datetime' }
-      - { label: 'End', name: 'end', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: 'YT ID', name: 'yt_id', widget: 'string' }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Start", name: "start", widget: "datetime" }
+      - { label: "End", name: "end", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "YT ID", name: "yt_id", widget: "string" }
 
-  - name: 'pages'
-    label: 'Pages'
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: 'src/pages/index.md'
-        label: 'Home Page'
-        name: 'index'
+      - file: "src/pages/index.md"
+        label: "Home Page"
+        name: "index"
         fields:
           - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'landing-page',
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "landing-page",
             }
           - { label: Title, name: title, widget: string }
