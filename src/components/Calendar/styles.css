@@ -2,3 +2,13 @@
   max-width: 900px;
   margin: 20px auto;
 }
+
+.calendar .rbc-event {
+  background-color: #e4572e;
+}
+
+.calendar .rbc-event:focus {
+  border: none;
+  outline: none;
+  background-color: rgb(245, 176, 155);
+}

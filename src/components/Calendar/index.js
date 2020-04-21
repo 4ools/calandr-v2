@@ -10,7 +10,7 @@ const localizer = momentLocalizer(moment);
 const CalendarComponent = ({ selectEvent }) => {
   const events = useEventData();
   return (
-    <div className="calendar">
+    <div className='calendar'>
       <Calendar
         views={{
           month: true,
@@ -19,8 +19,8 @@ const CalendarComponent = ({ selectEvent }) => {
         onSelectEvent={selectEvent}
         localizer={localizer}
         events={events}
-        startAccessor="start"
-        endAccessor="end"
+        startAccessor='start'
+        endAccessor='end'
         style={{ height: 500 }}
       />
     </div>
