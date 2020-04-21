@@ -8,7 +8,7 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
-# local_backend: true
+local_backend: true
 
 media_folder: static/img
 public_folder: /img
@@ -29,6 +29,12 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Start', name: 'start', widget: 'datetime' }
       - { label: 'End', name: 'end', widget: 'datetime' }
+      - {
+          label: 'Difficulty',
+          name: 'difficulty',
+          widget: 'select',
+          options: ['hard', 'harder'],
+        }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'YT ID', name: 'yt_id', widget: 'string' }
 
@@ -46,3 +52,5 @@ collections:
               default: 'landing-page',
             }
           - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: description, widget: 'markdown' }
+          - { label: Meet link, name: meetlink, widget: string }
