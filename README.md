@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4da9d9ea-dd24-4242-914c-37de47d50e50/deploy-status)](https://app.netlify.com/sites/calndr/deploys)
 
+# [Live site](https://www.lunch-workouts.com)
+
 ## Running locally
 
 - uncomment local_backend: true in `static/admin/config.yml`
