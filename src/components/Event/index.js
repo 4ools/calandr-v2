@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import ReactPlayer from 'react-player';
 import CalendarIcon from '@material-ui/icons/EventAvailable';
 import ReactMarkdown from 'react-markdown';
+import moment from 'moment';
 
 const useStyles = makeStyles({
   root: {
@@ -26,13 +27,18 @@ const useStyles = makeStyles({
   },
 });
 
+const formatTime = (date) => {
+  let formattedDate = moment.utc(date).format('YYYYMMDDTHHmmssZ');
+  return formattedDate.replace('+00:00', 'Z');
+};
+
 const EventDetails = ({ event, meetlink }) => {
   const classes = useStyles();
 
   let calendarUrl = 'https://calendar.google.com/calendar/render';
   calendarUrl += '?action=TEMPLATE';
-  calendarUrl += '&dates=' + event.start;
-  calendarUrl += '/' + event.end;
+  calendarUrl += '&dates=' + formatTime(event.start);
+  calendarUrl += '/' + formatTime(event.end);
   calendarUrl += '&location=' + encodeURIComponent('at Home 💪');
   calendarUrl += '&text=' + encodeURIComponent(event.title);
   calendarUrl +=
