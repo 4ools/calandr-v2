@@ -25,34 +25,33 @@ const useStyles = makeStyles({
   },
 });
 
-const EventDetails = ({ event }) => {
+const EventDetails = ({ event, meetlink }) => {
   const classes = useStyles();
 
-  // make a link for google calendar
-  // @TODO add meet link in there
   let calendarUrl = 'https://calendar.google.com/calendar/render';
   calendarUrl += '?action=TEMPLATE';
   calendarUrl += '&dates=' + event.start;
   calendarUrl += '/' + event.end;
   calendarUrl += '&location=' + encodeURIComponent('at Home 💪');
   calendarUrl += '&text=' + encodeURIComponent(event.title);
-  calendarUrl += '&details=' + encodeURIComponent(event.description);
+  calendarUrl +=
+    '&details=' + encodeURIComponent(`${event.description} ${meetlink}`);
 
   return (
     <Card className={classes.root}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant='h5' component='h2'>
             {event.title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant='body2' color='textSecondary' component='p'>
             {event.description}
           </Typography>
         </CardContent>
         <CardActions>
           <Button
-            variant="contained"
-            color="default"
+            variant='contained'
+            color='primary'
             href={calendarUrl}
             startIcon={<CalendarIcon />}
           >
@@ -67,8 +66,6 @@ const EventDetails = ({ event }) => {
       />
     </Card>
   );
-
-  // <pre>{JSON.stringify(event, null, 2)}</pre>
 };
 
 export default EventDetails;

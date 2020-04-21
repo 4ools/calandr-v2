@@ -29,12 +29,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Start', name: 'start', widget: 'datetime' }
       - { label: 'End', name: 'end', widget: 'datetime' }
-      - {
-          label: 'Difficulty',
-          name: 'difficulty',
-          widget: 'select',
-          options: ['hard', 'harder'],
-        }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'YT ID', name: 'yt_id', widget: 'string' }
 

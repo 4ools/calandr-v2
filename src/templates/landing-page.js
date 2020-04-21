@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  markdown: {
+    '& a': {
+      color: theme.palette.primary.main,
+    },
+  },
   paper: {
     padding: theme.spacing(2),
   },
@@ -47,17 +52,16 @@ export const LandingPageTemplate = ({ title, meetlink, description }) => {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <NavBar title={title} />
-        {/* https://meet.google.com/hox-ipzp-fqf */}
       </Grid>
       <Grid item xs={12}>
         <Paper className={classes.paper} elevation={3}>
           <Typography variant='h6'>
-            <ReactMarkdown source={description} />
+            <ReactMarkdown source={description} className={classes.markdown} />
           </Typography>
           <br />
           <Button
             variant='contained'
-            color='default'
+            color='primary'
             href={meetlink}
             startIcon={<LaunchIcon />}
           >
@@ -72,7 +76,7 @@ export const LandingPageTemplate = ({ title, meetlink, description }) => {
       </Grid>
       {event && (
         <Grid item xs={12}>
-          <Event event={event} />
+          <Event event={event} meetlink={meetlink} />
         </Grid>
       )}
       <Grid item xs={12}>

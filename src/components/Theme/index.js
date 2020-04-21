@@ -11,31 +11,11 @@ function Theme({ children }) {
       createMuiTheme({
         palette: {
           type: prefersDarkMode ? 'dark' : 'light',
-          // cases
           primary: {
-            main: '#3E92CC',
-          },
-          // deaths
-          error: {
             main: '#E4572E',
           },
-          // critical
-          warning: {
+          secondary: {
             main: '#F3A712',
-          },
-          // recovered
-          success: {
-            main: '#52AA5E',
-          },
-          // active
-          action: {
-            main: '#DAD7CD',
-          },
-        },
-        overrides: {
-          MuiAppBar: {
-            colorDefault: '#E4572E',
-            colorPrimary: '#E4572E',
           },
         },
       }),
