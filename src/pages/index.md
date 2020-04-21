@@ -1,6 +1,6 @@
 ---
 templateKey: landing-page
-title: 💪 Lunch time workouts 💪
+title: 💪 Lunchtime Workouts 💪
 description: >-
   **Welcome to the lunch workout app.**
 

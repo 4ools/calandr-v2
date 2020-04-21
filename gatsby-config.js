@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Workout with GSUS 💪',
+    title: 'Lunchtime Workouts',
     description:
-      'A place to come and find all your workouts and add them to your calendar. These are lunchtime workouts meant for anyone!',
+      'A place to come and find all your workouts and add them to your calendar. These are lunchtime workouts for anyone!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

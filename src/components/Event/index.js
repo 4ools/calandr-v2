@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import ReactPlayer from 'react-player';
 import CalendarIcon from '@material-ui/icons/EventAvailable';
+import ReactMarkdown from 'react-markdown';
 
 const useStyles = makeStyles({
   root: {
@@ -45,7 +46,7 @@ const EventDetails = ({ event, meetlink }) => {
             {event.title}
           </Typography>
           <Typography variant='body2' color='textSecondary' component='p'>
-            {event.description}
+            <ReactMarkdown source={event.description} />
           </Typography>
         </CardContent>
         <CardActions>
