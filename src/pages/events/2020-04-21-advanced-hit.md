@@ -2,7 +2,7 @@
 templateKey: event
 title: Advanced HIT
 start: 2020-04-26T10:10:00.000Z
-end: 2020-04-25T22:45:00.000Z
+end: 2020-04-26T10:45:00.000Z
 description: >-
   Are you looking for a serious challenge? Try this 35 Min Advanced Dumbbell
   HIIT workout and push yourself to your limits. This total body routine will
