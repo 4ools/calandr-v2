@@ -12,13 +12,11 @@ description: >-
   As with the other kickboxing ones:
 
 
-  \- You can do this with your hands
+  - You can do this with your hands
 
+  - You can do this with a punchbag
 
-  \- You can do this with a punchbag
-
-
-  \- You can do this with weights (light)
+  - You can do this with weights (light)
 
 
   **it is likely harder than the normal HIT workouts**
