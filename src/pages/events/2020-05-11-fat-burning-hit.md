@@ -1,8 +1,8 @@
 ---
 templateKey: event
 title: Fat burning HIT
-start: 2020-05-20T19:49:36.872Z
-end: 2020-05-20T19:49:36.885Z
+start: 2020-05-20T10:10:00.000Z
+end: 2020-05-20T10:40:00.000Z
 description: >-
   Body project HIT workout for fat burning 
 
