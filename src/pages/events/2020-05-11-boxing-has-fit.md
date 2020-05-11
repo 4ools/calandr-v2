@@ -1,7 +1,7 @@
 ---
 templateKey: event
 title: Boxing - Has fit
-start: 2020-05-15T22:00:00.000Z
+start: 2020-05-16T10:00:00.000Z
 end: 2020-05-16T11:00:00.000Z
 description: >-
   As it is the weekend I will do a boxing one as they are not always crowed
