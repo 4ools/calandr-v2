@@ -1,8 +1,8 @@
 ---
 templateKey: event
 title: Has Fit weights
-start: 2020-05-31T22:10:00.000Z
-end: 2020-05-31T22:55:00.000Z
+start: 2020-06-01T10:10:00.000Z
+end: 2020-06-01T10:55:00.000Z
 description: |-
   ## Full Body Workout with Dumbbells
 
